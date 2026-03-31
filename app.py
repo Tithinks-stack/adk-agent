@@ -7,13 +7,9 @@ app = Flask(__name__)
 def home():
     return "Location Intelligence ADK Agent is running 🌍"
 
-@app.route("/location")
-def location():
-    return "Showing location data for Mumbai 📍"
-
-@app.route("/map")
-def map_view():
-    return "Google Maps integration simulated 🗺️"
+@app.route("/bigquery")
+def bigquery():
+    return "Fetching data from BigQuery dataset 📊"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
