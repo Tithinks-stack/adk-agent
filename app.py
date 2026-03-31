@@ -7,9 +7,9 @@ app = Flask(__name__)
 def home():
     return "Location Intelligence ADK Agent is running 🌍"
 
-@app.route("/bigquery")
-def bigquery():
-    return "Fetching data from BigQuery dataset 📊"
+@app.route("/alloydb")
+def alloydb():
+    return "AlloyDB database setup successful 🗄️"
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
